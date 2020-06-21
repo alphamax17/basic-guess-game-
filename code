@@ -1,0 +1,23 @@
+import random   #here random is a library function used for taking random integers from the range you choose to give .
+n=random.randint(0,20)
+print(n)
+print("you have only 5 guesses")
+guess=0
+while(guess<5):
+    i=int(input("guess the number"))
+    if i==n:
+        print("your guess is right in",guess+1,"choice")
+        break
+    if i<n:
+        print("guess is lesser")
+    elif i>n:
+        print("guess is greater")
+    else:
+        print("your choice is wrong")
+    print("guess:",guess+1,"\n")
+    guess=guess+1
+if i==n:
+    print("congratulations")
+else:
+    print("sorry your guesses are over!!!!")
+
